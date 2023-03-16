@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;     /* 1rem=10px fixed kel aahe aani 10px=62.5% */
+}
+
+:root{
+    --navbar-height:59rem;
+}
+
+/*body{
+    background-color: #807c7f;
+}*/
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0rem;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai',cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    font-size: 2rem;
+    padding: .3rem 3.3rem;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: pink;
+    background-color: white;
+}
+
+#navbar ul li a:active{
+    background-color: yellowgreen;
+}
+
+#shopname{
+    color: #10dcea;
+    padding: .4rem;
+    font-size: 3rem;
+}
+
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: .3rem 2.2rem;
+    height: 55rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home::before{
+    content: "";
+    position: absolute;
+    background: url('bg1.jpg') no-repeat center center/cover;
+    height: 62.4rem;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    z-index: -1;
+}
+
+#home h1{
+    color: #f2f2f2;
+    font-size: 7rem;
+    text-align: center;
+    padding: 0rem;
+    font-family: 'Bree Serif',serif;
+    transition: 0.5s;
+}
+
+#home h1:hover{
+    -webkit-text-stroke: .2rem #f20c8f;
+    color: transparent;
+}
+
+#home h2{
+    color: #c0f5f6;
+    font-size: 4.4rem;
+    text-align: center;
+    padding: 2.0rem 9.9rem;
+    transition: 0.5s;
+}
+
+#home h2:hover{
+    -webkit-text-stroke: .2rem yellow;
+    color: transparent;
+}
+
+#Home p{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bree Serif',serif;
+    padding: 0rem 12.2rem;
+}
+
+/* Services Section */
+
+/* #Services{
+    margin: 34px;
+   display: flex;
+
+}*/
+
+
+#Services{
+    margin: 3.4rem;
+    display: grid;
+    /*display: flex;
+    flex-direction: column;*/
+    grid-template-columns: repeat(3,2fr);
+    justify-content: center;
+    grid-row-gap: .4rem;
+    justify-content: space-between;
+}
+
+#Services-container
+
+ #Services-container{
+    position: relative;
+}
+
+/*#Services-container::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:url('bg8.jpg')no-repeat center center/cover;
+    overflow: hidden;
+}*/
+
+   #Services-container h1{
+    font-size: 3rem;
+    padding: 5rem 13rem;
+    margin: .1rem 40rem;
+    color: #839226;
+    font-family: 'Bree Serif',serif;  
+    transition: 0.5s; 
+}
+
+#Services-container h1:hover{
+    -webkit-text-stroke: .2rem #816a25;
+    color: transparent;
+}
+
+#Services .box{
+    border: .2rem solid brown;
+    padding: 3.4rem;
+    margin: .2rem 0.5rem;
+    border-radius: 2.8rem;
+    background: #f2f2f2;
+    /*margin-bottom: 2.0rem;
+    margin-top: -4.0rem;*/
+}
+
+#Services .box:hover{
+    background-color: #b3f5d7;
+    color: #f43901;
+}
+
+#Services .box img{
+    height: 10rem;
+    width: 21rem;
+    margin: auto;
+    display: block;
+}
+
+#Services .box p{
+    font-family: 'Bree Serif',serif;
+    font-size: 1.3rem;
+}
+
+#Services .box details p{
+    font-family: 'Bree Serif',serif;
+    font-size: 1.3rem;
+}
+
+#Services .box h2{
+    font-size: 1.2rem;
+}
+
+#Services .box b{
+    font-size: 1rem;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: .5rem;
+    margin: 2rem 5rem;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}  
+.column img{
+    width: 210%;
+    height: 90%;
+}
+
+/*About Us */
+
+#About-Us
+
+#About-Us{
+    position: relative;
+}
+
+#About-Us::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    z-index: -1;
+    background: url('bg16.jpg') no-repeat center center/cover; 
+    overflow: hidden;  
+}
+
+/* #About-Us::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+    background: url('bg16.jpg') no-repeat center center/cover;   
+}*/
+
+#About-Us h1{
+    text-align: center;
+    padding: 2rem 20rem;
+    font-size: 4.4rem;
+    color: black;
+    transition: 0.5s;
+}
+
+#About-Us h1:hover{
+    -webkit-text-stroke: .3rem #ff5722;
+    color: transparent;
+}
+
+#About-Us .aboutus{
+    background: #beafaf;
+    border: .2rem solid brown;
+    font-size: 1.6rem;
+    padding: 3.5rem;
+    border-radius: 2.8rem;
+    height: 30rem;
+    margin: auto;
+    width: 30rem;
+    text-align: justify;  
+}
+
+#About-Us .aboutus:hover{
+    background-color: #cbc7e1;
+    color: #6fa165;
+}
+
+
+/*Contact Us*/
+#Contact
+
+#Contact{
+    position: relative;
+}
+
+#Contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+    background: url('bg12.jpg') no-repeat center center/cover;   
+}
+
+#Contact .masseg h2{
+    font-size: 4.0rem;
+    text-align: center;
+    color: black;
+}
+
+#Contact .masseg h3{
+    font-size: 2.19rem;
+    text-align: center;
+    color: black;
+}
+
+#Contact .icon{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact .icon a img{
+    height: 5rem;
+    padding: 1rem;
+}
+
+#Contact .icon a img:hover{
+    background-color: #eeee75;
+}
+
+#Contact .icon h1{
+    font-size: 3rem;
+}
+
+#Contact .icon h1:hover{
+    background-color: #eeeec2;
+    color: red;
+}
+
+#Contact .contener{
+    border: .2rem solid green;
+    border-radius: 1rem;
+    background-color: beige;
+    height: 33rem;
+    width: 31rem;
+    margin: auto;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#Contact .id input{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#Contact .id button{
+    text-align: center;
+    padding: 0.1rem 1.5em;
+    font-size: 2rem;
+}
+
+
+/*Footer*/
+
+/*footer{
+    background-color: black;
+    color: white;
+    padding: 2rem 3rem;
+}*/
+
+/* Utility Classes */
+
+.h-primary{
+    font: 3.8rem;
+    padding: 7rem 13rem;
+    color: #191219;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.h-secondary{
+    font: 2.8rem;
+    padding: 1.2rem;
+}
+
+/*header responsive code*/ 
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+    
+}
+
+
+/*#Services{
+    flex-direction: column;
+}
+
+
+#Services .box{
+    padding: 1.4rem;
+    margin: .2rem 0rem;
+    margin-bottom: 2.0rem;
+}*/
+
+
