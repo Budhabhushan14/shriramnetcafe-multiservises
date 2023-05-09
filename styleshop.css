@@ -244,7 +244,7 @@ html{
     content: " ";
     position: absolute;
     width: 100%;
-    height: 30rem;
+    height: 48rem;
     z-index: -1;
     background: url('bg16.jpg') no-repeat center center/cover; 
     overflow: hidden;  
@@ -279,7 +279,7 @@ html{
     font-size: 1.6rem;
     padding: 3.5rem 1rem;
     border-radius: 2.8rem;
-    height: 40rem;
+    height: 30rem;
     margin: auto;
     width: 30rem;
     text-align: justify;  
