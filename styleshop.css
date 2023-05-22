@@ -13,9 +13,9 @@ html{
     --navbar-height:59rem;
 }
 
-/*body{
+body{
     background-color: #807c7f;
-}*/
+}
 
 #navbar{
     display: flex;
