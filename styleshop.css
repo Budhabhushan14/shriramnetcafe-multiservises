@@ -13,9 +13,9 @@ html{
     --navbar-height:59rem;
 }
 
-body{
+/*body{
     background-color: #dfbdd7;
-}
+}*/
 
 #navbar{
     display: flex;
@@ -388,7 +388,7 @@ body{
 
 .h-secondary{
     font: 2.8rem;
-    padding: 1.rem;
+    padding: 1.2rem;
 }
 
 /*header responsive code*/ 
